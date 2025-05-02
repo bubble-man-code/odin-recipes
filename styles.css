@@ -1,0 +1,64 @@
+html{
+    box-sizing: border-box;
+}
+*, *:before ,*:after{
+box-sizing: inherit;
+font-family: 'Times New Roman', Times, serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.hero{
+    text-align: center;
+    background-color: yellow;
+}
+.catalog{
+    display: flex;
+    border: 2px solid black;
+    justify-content: center;
+    
+}
+.recipe{
+    text-align: center;
+    align-content: center;
+    border: 2px solid black;
+    padding: 4px;
+    width: 200px;
+    height: 50px;
+    list-style-type: none;
+    margin: 5px;
+    font-size: 20px;
+}
+.an{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    display: block;
+}
+.r1,.r2,.r3 {
+height: 50px;
+width: 200px ;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+.r1{
+   background-image: url("https://www.allrecipes.com/thmb/ju2VcU3K6LMEm7jExrU1fJXfWNw=/0x512/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/79543-Easy-Fried-Rice-DDMFS-4x3-426f1d764c354b7880a5a9a9f0a52a90.jpg");
+}
+
+.r2{
+    background-image: url("https://www.allrecipes.com/thmb/pXk9U73K_i8rXbu8Uy28ARjJ_9s=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/AR-35963-french-fried-potatoes-DDMFS-step-4-08eb4834fa264a0b9f1f6e7ab1b8910b.jpg");
+}
+.r3{
+    background-image: url("https://www.allrecipes.com/thmb/BxzNyKGnzk2CCpyz98H8PtKuO3o=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/567274-fabulous-fried-cabbage-TTV78-4x3-1-64ef20d298b542fa9ed319638b47a717.jpg");
+    
+}
+.r{
+    border: 3px solid ;
+    flex-grow: 1;
+}
+.r1:hover ~ .r .r1 {
+    opacity: 1;
+  }
